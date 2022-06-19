@@ -1,2 +1,2 @@
 # CodeClashes
-Bunch of small problem from Codinggame.com 
+Bunch of small problems from Codinggame.com 
