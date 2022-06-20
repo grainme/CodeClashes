@@ -1,5 +1,5 @@
 #sum the digits of a given number untill its length is equal to 1:
---->Implementation
+--->#Implementation
 n=int(input())
 if n==0:
     print(0)
