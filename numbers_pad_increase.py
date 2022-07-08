@@ -11,9 +11,20 @@
 ##### MY SOLUTION :
 
 l = input()
-r=""
+s=""
 for i in l:
     x=int(i)+3
-    if x<10:r+=str(x)
-    else:r+=str(x%10+1)
+    s += str(x) if x<10 else str(x%10+1)
 print(r)
+
+
+#### AUTHOR'S SOLUTION : 
+l = input()
+res=""
+for i in l:
+    res+="456789123"[int(i)-1]
+print(res)
+
+
+
+# Problem's Link : https://www.codingame.com/contribute/view/1298578cda5354395e5a51f07f8dd7c0dca54
