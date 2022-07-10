@@ -1,13 +1,9 @@
-import re
+import re #Regex Module
 
-s = "hi123are559887fine11"
-matches = re.findall("(\D+)(\d+)",s)
-for i in matches:
-    for k in i:
-        if k.isalpha():
-            print(str(k)[::-1],end="")
-        else:
-            print(k,end="")
+s = "hi123are559887fine11" #input example
+
+for i in re.findall("\D+|\d+",s):
+    print(i[::-1] if i.isalpha() else i,end="")
 
 #input = hi123are559887fine11
 #output = ih123era559887enif11
