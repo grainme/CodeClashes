@@ -5,11 +5,17 @@
 #Thus, we obtain: 5 + 27 = 32 -------------------
 
 import re
-n = input()
-s = input()
 
-try:
-    word = s[s.index(n[0]):s.rindex(n[len(n)-1])+1]
-    print(sum(list(map(int,re.findall("\d+",word)))))
-except ValueError:
-    print(0)
+
+def main():
+    n = input()
+    s = input()
+    try:
+        word = s[s.index(n[0]):s.rindex(n[len(n)-1])+1]
+        print(sum(list(map(int,re.findall("\d+",word)))))
+    except ValueError:
+        print(0)
+
+        
+if __name__=="__main__":
+    main()
